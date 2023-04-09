@@ -1,0 +1,141 @@
+body {background-color: lightblue;}
+
+  h1 {
+    color: navy;
+    margin-left: 20px;
+  }
+
+ #main2 {
+  width: 70px;
+  height: 300px;
+  border: 1px solid #c3c3c3;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+#main2 div {
+  width: 70px;
+  height: 70px;
+}
+
+#main1 {
+  width: 220px;
+  height: 300px;
+  border: 1px solid black; 
+  display: flex;
+  align-items: center;
+}
+
+#main1 div {
+  flex: 1;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+}
+
+input[type=checkbox] {
+  accent-color: green;
+}
+
+input[type=radio] {
+  accent-color: red;
+}
+
+input[type=range] {
+  accent-color: rgb(0, 0, 255);
+}
+
+progress {
+  accent-color: hsl(39, 100%, 50%);
+}
+
+div.background {
+  background: lightblue url(images/food.jpg) no-repeat center;
+  background-size: cover;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 300px;
+  width: 300px;
+}
+
+div.transbox {
+  background-color: rgba(255, 255, 255, 0.4);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  padding: 20px;
+  margin: 30px;
+  font-weight: bold;}
+
+
+div.aspect {
+  background-color: red;
+  width: 100px;
+  aspect-ratio: 3/2;
+}
+h4 {
+  border: 5px solid red;
+}
+
+h5 {
+  border: 4px dotted blue;
+}
+
+h6 {
+  border: double;
+}
+div {
+  background-color: lightgreen;
+  inline-size: 70%;
+  border-block-width: 10px;
+}
+
+#example1 {
+  border-block-style: solid;
+  border-block-color: pink;
+}
+
+#example2 {
+  border-block-style: solid;
+  border-block-color: pink lightblue ;
+}
+#example3 {
+  background-color: indianred;
+  inline-size: 70%;
+  border-block-end-width: 10px;
+  border-block-end-style: dotted;
+} 
+
+
+
+div {
+  background-color: greenyellow;
+  inline-size: 70%;
+  border-block-width: 5px;
+}
+
+#example4 {
+  border-block-style: solid;
+}
+
+#example5 {
+  border-block-style: dashed dotted;
+}
+
+  div.anim {
+  width: 25px;
+  height: 25px;
+  background: red;
+  position: relative;
+  animation: myfirst 5s 4;
+  animation-direction: alternate;
+}
+
+@keyframes myfirst {
+  0%   {background: red; left: 0px; top: 0px;}
+  25%  {background: yellow; left: 50px; top: 0px;}
+  50%  {background: blue; left: 50px; top: 50px;}
+  75%  {background: green; left: 0px; top: 50px;}
+  100% {background: red; left: 0px; top: 0px;}
+}
